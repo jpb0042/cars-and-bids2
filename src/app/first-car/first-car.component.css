@@ -1,0 +1,12 @@
+#one {
+    margin-top: 10%;
+    margin-left: 4%;
+}
+#one .card-title{
+    font-size: 100%;
+    
+}
+#one .card-text{
+    font-size: 75%;
+}
+

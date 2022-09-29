@@ -1,0 +1,11 @@
+#two {
+    margin-top: -25%;
+    margin-left: 29%;
+}
+#two .card-title{
+    font-size: 100%;
+    
+}
+#two .card-text{
+    font-size: 75%;
+}
