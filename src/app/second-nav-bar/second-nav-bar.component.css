@@ -1,0 +1,26 @@
+#second-bar{
+    height: 50px;
+    width: 100%;
+    top: 140px;
+    position: fixed;
+    z-index: 1;
+
+}
+#second-bar .navbar-brand{
+    font-size: 155%;
+    margin-left: 4%
+}
+#second-bar .nav-item{
+    font-size: 80%;
+    margin-left: 25px;
+
+
+}
+#mid-bar {
+    z-index: 1;
+    top: 70px;
+}
+#mid-bar .navbar-brand{
+    font-size: 145%;
+    margin-left: 4%;
+}

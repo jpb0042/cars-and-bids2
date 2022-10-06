@@ -1,1 +1,10 @@
-<p>layout1 works!</p>
+<app-second-nav-bar>loading</app-second-nav-bar>
+<div class ="container-fluid d-flex">
+    <div *ngFor = "let x of products">
+        <app-cars-left img = {{x.img}} price = {{x.price}} desc = {{x.desc}} cardTitle = {{x.cardTitle}}>
+            loading...
+        </app-cars-left>
+    </div>
+</div>
+
+<app-right-column>loading</app-right-column>

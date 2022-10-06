@@ -11,6 +11,13 @@ import { SecondCarComponent } from './second-car/second-car.component';
 import { ThirdCarComponent } from './third-car/third-car.component';
 import { CarsLeftComponent } from './cars-left/cars-left.component';
 import { Layout1Component } from './layout1/layout1.component';
+import { SecondNavBarComponent } from './second-nav-bar/second-nav-bar.component';
+import { SellACarComponent } from './sell-a-car/sell-a-car.component';
+import { InformationComponent } from './information/information.component';
+import { FooterComponent } from './footer/footer.component';
+import { PhotoGuideComponent } from './photo-guide/photo-guide.component';
+import { MerchPageComponent } from './merch-page/merch-page.component';
+import { SupportPageComponent } from './support-page/support-page.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +29,13 @@ import { Layout1Component } from './layout1/layout1.component';
     ThirdCarComponent,
     CarsLeftComponent,
     Layout1Component,
+    SecondNavBarComponent,
+    SellACarComponent,
+    InformationComponent,
+    FooterComponent,
+    PhotoGuideComponent,
+    MerchPageComponent,
+    SupportPageComponent,
   ],
   imports: [
     BrowserModule,

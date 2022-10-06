@@ -3,7 +3,7 @@
     height: 80px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 #top-bar .navbar-brand{
     font-size: 215%;
@@ -25,30 +25,5 @@
     margin-left: 10px;
     font-size: 90%;
 }
-#second-bar{
-    height: 50px;
-    width: 100%;
-    top: 140px;
-    position: fixed;
-    z-index: 1;
 
-}
-#second-bar .navbar-brand{
-    font-size: 155%;
-    margin-left: 4%
-}
-#second-bar .nav-item{
-    font-size: 80%;
-    margin-left: 25px;
-
-
-}
-#mid-bar {
-    z-index: 1;
-    top: 95px;
-}
-#mid-bar .navbar-brand{
-    font-size: 145%;
-    margin-left: 4%;
-}
 
