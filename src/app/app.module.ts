@@ -18,6 +18,14 @@ import { FooterComponent } from './footer/footer.component';
 import { PhotoGuideComponent } from './photo-guide/photo-guide.component';
 import { MerchPageComponent } from './merch-page/merch-page.component';
 import { SupportPageComponent } from './support-page/support-page.component';
+import { SellCarCarouselComponent } from './sell-car-carousel/sell-car-carousel.component';
+import { RecentlySoldComponent } from './recently-sold/recently-sold.component';
+import { RecentlySoldListComponent } from './recently-sold/recently-sold-list/recently-sold-list.component';
+import { OurAuctionsCard1Component } from './our-auctions-card1/our-auctions-card1.component';
+import { OurAuctionsCard2Component } from './our-auctions-card2/our-auctions-card2.component';
+import { MerchComponent } from './merch/merch.component';
+import { MerchReturnCardComponent } from './merch-return-card/merch-return-card.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +44,14 @@ import { SupportPageComponent } from './support-page/support-page.component';
     PhotoGuideComponent,
     MerchPageComponent,
     SupportPageComponent,
+    SellCarCarouselComponent,
+    RecentlySoldComponent,
+    RecentlySoldListComponent,
+    OurAuctionsCard1Component,
+    OurAuctionsCard2Component,
+    MerchComponent,
+    MerchReturnCardComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,

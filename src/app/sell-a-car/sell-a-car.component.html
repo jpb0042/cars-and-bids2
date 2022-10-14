@@ -1,27 +1,42 @@
-<div class = "col" id = "column">
-    <div class = "container">
-        <div class="row">
-        
-            <h3>Sell on Cars and Bids!</h3>
-            <h3>More money, fewer headaches</h3>
-                
-        </div>
-        
-        <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                </ul>
-            </div>
-            <div class="col-6">
-                <h2>Our customers love us!</h2>
-                <p>
-                    The only way to sell your car. I have sold many cars in my life and this was by far the best.
-                </p>
-            </div>
-        </div>    
+<div class="d-flex justify-content-center" id = "top">
+    <div class="d-flex flex-column">
+        <h1>Sell on Cars & Bids!</h1>
+        <h1>More money, fewer headaches.</h1>
+      </div>
+    
+</div>
+<div class="d-flex justify-content-center">
+    <div class="d-flex flex-column" id = "top2">
+        <ul>
+            <li>Live support from listing to post-sale.</li>
+            <li>Sell your car faster and go from submission to auction in under a week</li>
+            <li>Access our huge audience of engaged enthusiasts</li>
+        </ul>
+    </div>
+    <div class="d-flex flex-column" id = "top3">
+        <h4>Our Customers Love Us!</h4>
+        <app-sell-car-carousel>...</app-sell-car-carousel>
     </div>
 </div>
-
+<div class = "d-flex justify-content-center">
+    <h4>Recent Sales</h4>
+</div>
+<div class ="container-fluid d-flex justify-content-center" id = "recently-sold">
+    <div *ngFor = "let x of products">
+        <app-recently-sold img = {{x.img}} price = {{x.price}} cardTitle = {{x.cardTitle}}>
+            loading...
+        </app-recently-sold>
+    </div>
+</div>
+<div class = "d-flex justify-content-center" id = "top3">
+    <h4>Our Auctions</h4>
+</div>
+<div class = "d-flex justify-content-center" id = "our-auctions">
+    <div class = "d-flex flex-column">
+        <app-our-auctions-card1>...</app-our-auctions-card1>
+    </div>
+    <div class = "d-flex flex-column">
+        <app-our-auctions-card2>...</app-our-auctions-card2>
+    </div>
+</div>
 

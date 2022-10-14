@@ -1,1 +1,19 @@
-<p>merch-page works!</p>
+<div class="d-flex justify-content-center" id = "top">
+    <div class="d-flex flex-column">
+        <h1>THIS...is the Cars & Bids Merch Store</h1>
+      </div>
+    
+</div>
+<div class = "d-flex justify-content-center" id = "top2">
+  <p>We've heard the requests. We've heard the pleas. We KNOW you want Cars & Bids tees! (and much more coming soon).</p>
+</div>
+<div class ="container-fluid d-flex justify-content-center" id = "ng">
+  <div *ngFor = "let x of products">
+      <app-merch img = {{x.img}} price = {{x.price}} cardTitle = {{x.cardTitle}}>
+          loading...
+      </app-merch>
+  </div>
+</div>
+<div class = "d-flex justify-content-center" id = "bottom">
+  <app-merch-return-card>loading</app-merch-return-card>
+</div>

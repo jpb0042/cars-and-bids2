@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { recently_sold_list2 } from '../recently-sold/recently-sold-list2';
+import { RecentlySoldModel } from '../recently-sold/recently-sold.model';
 
 @Component({
   selector: 'app-sell-a-car',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellACarComponent implements OnInit {
 
-  constructor() { }
+  products: RecentlySoldModel[] = []
+  constructor(){
+    for (var x of recently_sold_list2){
+      console.log(x)
+      this.products.push(x)
+    }
+  }
 
   ngOnInit(): void {
   }
