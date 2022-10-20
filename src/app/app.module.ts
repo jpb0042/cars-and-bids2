@@ -26,6 +26,8 @@ import { OurAuctionsCard2Component } from './our-auctions-card2/our-auctions-car
 import { MerchComponent } from './merch/merch.component';
 import { MerchReturnCardComponent } from './merch-return-card/merch-return-card.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import {HttpClientModule} from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -52,10 +54,12 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     MerchComponent,
     MerchReturnCardComponent,
     SideBarComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
