@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { cars_left_list } from '../cars-left/cars-left-list';
 import { CarsLeftModel } from '../cars-left/cars-left.model';
+import { Layout1Service } from './layout1.service';
 
 @Component({
   selector: 'app-layout1',
@@ -10,14 +10,17 @@ import { CarsLeftModel } from '../cars-left/cars-left.model';
 export class Layout1Component implements OnInit {
 
   products: CarsLeftModel[] = []
-  constructor(){
-    for (var x of cars_left_list){
-      console.log(x)
-      this.products.push(x)
-    }
+
+  constructor(private layout1Service:Layout1Service){
   }
 
   ngOnInit(): void {
+    this.layout1Service.getProducts().subscribe((data: CarsLeftModel[]) => {
+    console.log("Fetching products");
+    for (var product of data){
+      console.log(product);
+      this.products.push(product);
+    }});
   }
 
 }
