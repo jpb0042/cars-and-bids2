@@ -13,7 +13,7 @@ export class Layout1Service{
 
     }
     getProducts(){
-        return this.http.get<CarsLeftModel>(this.baseUrl + this.productsEndPoint);
+        return this.http.get<CarsLeftModel []>(this.baseUrl + this.productsEndPoint);
     }
     getProduct(index:number){
         return this.http.get<CarsLeftModel>(this.baseUrl + 'products' + '/' + index + '.json');

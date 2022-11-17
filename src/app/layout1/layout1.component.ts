@@ -20,7 +20,8 @@ export class Layout1Component implements OnInit {
     for (var product of data){
       console.log(product);
       this.products.push(product);
-    }});
+    }
+  });
   }
 
 }

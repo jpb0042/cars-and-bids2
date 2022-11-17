@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "carsandbids-app"
+  },
+  "targets": {
+    "carsandbids-app": {
+      "hosting": {
+        "hello-world-app": [
+          "carsandbids-app"
+        ]
+      }
+    }
+  }
+}

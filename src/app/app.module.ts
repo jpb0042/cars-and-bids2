@@ -28,6 +28,10 @@ import { MerchReturnCardComponent } from './merch-return-card/merch-return-card.
 import { SideBarComponent } from './side-bar/side-bar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -60,6 +64,9 @@ import { UserInfoComponent } from './user-info/user-info.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    //AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
   ],
   providers: [],
   bootstrap: [AppComponent]
