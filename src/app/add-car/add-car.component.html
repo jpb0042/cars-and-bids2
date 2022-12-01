@@ -1,0 +1,28 @@
+<div class = "container" id = "box">
+    <div class = "row" >
+        <div class = "col-8">
+            <form #postForm="ngForm" (ngSubmit)="addCar(postForm.value)">
+    
+                <div class = "input-group">
+                    <span class = "input-group-text">Image Path</span>
+                    <input type = "text" class = "form-control" ngModel name="img">
+                </div>
+    
+                <div class = "input-group">
+                    <span class = "input-group-text">Reserve</span>
+                    <input type = "text" class = "form-control" ngModel name="price">
+                </div>
+    
+                <div class = "input-group">
+                    <span class = "input-group-text">Description</span>
+                    <input type = "text" class = "form-control" ngModel name="desc">
+                </div>
+    
+                <button class = "btn btn-light" type = "submit">
+                    Submit
+                </button>
+    
+            </form>
+        </div>
+    </div>    
+</div>

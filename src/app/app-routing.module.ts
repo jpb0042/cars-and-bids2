@@ -5,6 +5,7 @@ import { Layout1Component } from './layout1/layout1.component';
 import { MerchPageComponent } from './merch-page/merch-page.component';
 import { PhotoGuideComponent } from './photo-guide/photo-guide.component';
 import { SellACarComponent } from './sell-a-car/sell-a-car.component';
+import { SubmitCarComponent } from './submit-car/submit-car.component';
 import { SupportPageComponent } from './support-page/support-page.component';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'Support', component: SupportPageComponent},
   {path: 'Photos', component: PhotoGuideComponent},
   {path: 'Merch', component: MerchPageComponent},
+  {path: 'Submit', component: SubmitCarComponent}
 ];
 
 @NgModule({

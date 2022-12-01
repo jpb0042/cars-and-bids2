@@ -32,6 +32,10 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AddCarComponent } from './add-car/add-car.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { SubmitCarComponent } from './submit-car/submit-car.component';
 
 @NgModule({
   declarations: [
@@ -59,14 +63,17 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
     MerchReturnCardComponent,
     SideBarComponent,
     UserInfoComponent,
+    AddCarComponent,
+    SubmitCarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //AngularFireModule.initializeApp(environment.firebase),
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    //provideFirebaseApp(() => initializeApp(environment.firebase)),
+    //provideDatabase(() => getDatabase()),
   ],
   providers: [],
   bootstrap: [AppComponent]
