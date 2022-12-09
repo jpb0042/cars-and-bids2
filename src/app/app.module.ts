@@ -36,6 +36,7 @@ import { AddCarComponent } from './add-car/add-car.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { SubmitCarComponent } from './submit-car/submit-car.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { SubmitCarComponent } from './submit-car/submit-car.component';
     UserInfoComponent,
     AddCarComponent,
     SubmitCarComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,

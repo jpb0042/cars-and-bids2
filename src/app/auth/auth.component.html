@@ -1,0 +1,90 @@
+<div class="layout container-fluid">
+
+    <div class="card" style="width: 25rem;">
+
+        <div class = "card-header" id = "header">
+            <h2>Sign up for daily emails!</h2>
+        </div>
+
+        <div class="card-body">
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text">Email</span>
+                    <input type = "text" class = "form-control" placeholder = "devine@mix.wvu.edu"
+                        ngModel name = "email"
+                        required email>
+                </div>
+
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text">Password</span>
+                    <input type = "password" class = "form-control" placeholder = "Min 5 characters"
+                        ngModel name = "password"
+                        required password minlength="5">
+                </div>
+
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text">Confirm Password</span>
+                    <input type = "password" class = "form-control" placeholder = "Min 5 characters"
+                        ngModel name = "passwordConfirm"
+                        required password minlength="5">
+                </div>
+
+                <button class = "btn btn-dark m1" type = "submit" [disabled]="!authForm.valid" (click)="buttonClicked='Login'" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign up 
+                </button>
+            </form>
+
+        </div>
+    </div>
+    
+    <div class="card" style="width: 25rem;">
+
+        <div class = "card-header" id = "header">
+            <h2>Login to an existing account</h2>
+        </div>
+
+        <div class="card-body">
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text">Email</span>
+                    <input type = "text" class = "form-control" placeholder = "devine@mix.wvu.edu"
+                        ngModel name = "email"
+                        required email>
+                </div>
+
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text">Password</span>
+                    <input type = "password" class = "form-control" placeholder = "Min 5 characters"
+                        ngModel name = "password"
+                        required password minlength="5">
+                </div>
+
+                <button class = "btn btn-dark m1" type = "submit" [disabled]="!authForm.valid" (click)="buttonClicked='SignUp'">
+                    Login
+                </button>
+            </form>
+            
+        </div>
+    </div>
+
+    
+</div> 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Thank you for creating an account!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+       
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <a class = "nav-link" href = "#">Go Home</a> 
+            </button>
+        </div>
+      </div>
+    </div>
+</div>
